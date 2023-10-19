@@ -6,7 +6,7 @@ function Task({tasks, hanldeSetCompleted, handleClearTask}) {
                     {
                         task.completed ? 
                             <div onClick={() => hanldeSetCompleted(task.id)} className="bg-green-700 rounded-full p-1 cursor-pointer">
-                                <img src="src/icons/CheckIcon.svg" alt="Check Task Icon" className="w-5 h-auto" />
+                                <img src="../icons/CheckIcon.svg" alt="Check Task Icon" className="w-5 h-auto" />
                             </div> :
                             <span onClick={() => hanldeSetCompleted(task.id)} className="border-solid border border-gray-400 rounded-full cursor-pointer p-3"></span>
                     }
@@ -14,7 +14,7 @@ function Task({tasks, hanldeSetCompleted, handleClearTask}) {
                         {task.title}
                     </p>
                     <img
-                        src="src/icons/CloseIcon.svg"
+                        src="../icons/CloseIcon.svg"
                         alt="Close Task Icon"
                         className="w-5 h-auto cursor-pointer"
                         onClick={() => handleClearTask(task.id)}
